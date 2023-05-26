@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>596</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(42, 43, 44);</string>
+   </property>
+   <widget class="QLabel" name="MenuHeader">
+    <property name="geometry">
+     <rect>
+      <x>90</x>
+      <y>50</y>
+      <width>639</width>
+      <height>89</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NFL Chiefs</family>
+      <pointsize>24</pointsize>
+     </font>
+    </property>
+    <property name="layoutDirection">
+     <enum>Qt::LeftToRight</enum>
+    </property>
+    <property name="autoFillBackground">
+     <bool>false</bool>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 252, 243);</string>
+    </property>
+    <property name="text">
+     <string>Fantasy Football Web Scraper</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="year_select">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>210</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>10</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+      <underline>false</underline>
+      <kerning>false</kerning>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(42, 43, 44);
+selection-color: rgb(255, 255, 255);
+background-color: rgb(82, 178, 200);</string>
+    </property>
+    <property name="editable">
+     <bool>false</bool>
+    </property>
+    <property name="currentText">
+     <string>2022</string>
+    </property>
+    <property name="currentIndex">
+     <number>22</number>
+    </property>
+    <property name="insertPolicy">
+     <enum>QComboBox::InsertAtTop</enum>
+    </property>
+    <item>
+     <property name="text">
+      <string>2000</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2001</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2002</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2003</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2004</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2005</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2006</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2007</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2008</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2009</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2010</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2011</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2012</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2013</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2014</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2015</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2016</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2017</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2018</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2019</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2020</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2021</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>2022</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>170</y>
+      <width>191</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NFL Chiefs</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 252, 243);</string>
+    </property>
+    <property name="text">
+     <string>Choose Year</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>280</y>
+      <width>431</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NFL Chiefs</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 252, 243);</string>
+    </property>
+    <property name="text">
+     <string>Choose location for csv file</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="Browse_Button">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>320</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(42, 43, 44);
+background-color: rgb(82, 178, 200);</string>
+    </property>
+    <property name="text">
+     <string>Browse</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="CSV_Button">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>440</y>
+      <width>271</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial Black</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <italic>false</italic>
+      <bold>true</bold>
+      <underline>false</underline>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(42, 43, 44);
+background-color: rgb(82, 178, 200);</string>
+    </property>
+    <property name="text">
+     <string>Generate CSV File</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>390</y>
+      <width>431</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>NFL Chiefs</family>
+      <pointsize>18</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 252, 243);</string>
+    </property>
+    <property name="text">
+     <string>Let the magic happen!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
